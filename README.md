@@ -45,4 +45,4 @@ to unpredictable outputs.
  - **FAST_SET** : If true the fast transition is from low to high, else from high to low
  
  # License
- This file is licensed under the MIT license. See LICENSE file
+ This file is licensed under the MIT license. See the LICENSE file for more informations.
