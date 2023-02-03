@@ -37,6 +37,13 @@ cause timing violations. The cell is glitch-free and oscillation-free,
 timing violations will not put the cell in an unstable state but can lead
 to unpredictable outputs.
 
+# Why so complicated ?
+The main advantage of this architecture compared to a simple mux connected to a D flip-flop
+is the absence of bounce-back effect. In the simpler architecture, a pulse short enough on
+one input while the other is high will make the flip-flop "bounce" back to its original state.
+This better architecture is immune to that effect, with the cost of being more than 2 times
+bigger and somewhat slower.
+
 # Generics
  - **RESET_POSITIVE** : If true RST is active high, else it is active low
  - **RESET_LOW** : If true asserting RST set Q to low, else it resets to high
